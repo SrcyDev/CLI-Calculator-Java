@@ -13,8 +13,8 @@ I will recommend the python version as it will recieve more updates for bugs.
 
 ## Any other languages in the near future ?
 
-There will likely be a bash version for Linux.
-Use the `.exe` for Windows in the python releases.
+There will most likely a C version.
+Use the `.exe` for Windows in the Windows Directory.
 
 ## Which version should I choose ?
 
