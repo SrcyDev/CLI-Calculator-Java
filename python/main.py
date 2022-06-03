@@ -1,70 +1,64 @@
-##########START##########
-
-#####IMPORT START#####
-
+# Welcome to this simple calculator
+# I have not commented this that much in an effort to
+# write clear code. I hope its clearly understandable.
+# Thank you.
+# Application Icon by Freepik
 import math
 
-#####IMPORT END#######
 
-#####METHOD START#####
-def main():
- x = int(input("Enter first number :-"))
-      
- print("Enter your choice as follows:")
- print("1: Addition")
- print("2: Subtraction")
- print("3: Multiplication")
- print("4: Division")
- print("5: Modulus / Remainder")
- print("6: Exponent / Power")
-         
- choice = int(input("Enter choice now : "))
+def method():
+    x = int(input("Enter first number: "))
+    if x != int(x):
+        print("Invalid Integer . Try again.")
+    print("Enter your Operators as follows:")
+    print("1. Addition: 1")
+    print("2. Subtraction: 2")
+    print("3. Multiplication: 3")
+    print("4. Division: 4")
+    print("5. Exponent / Power: 5")
+    print("6. Modulus / Remainder: 6")
+    operator = input("Now, Enter your operator: ")
+    y = int(input("Enter second number: "))
+    if y != int(y):
+        print("Invalid Integer. Try again.")
+    if operator == "1":
+        z = x + y
+        print(z)
+    elif operator == "2":
+        z = x - y
+        print(z)
+    elif operator == "3":
+        z = x * y
+        print(z)
+    elif operator == "4":
+        z = x / y
+        print(z)
+    elif operator == "5":
+        z = math.pow(x, y)
+        print(z)
+    elif operator == "6":
+        z = x % y
+        print(z)
+    else:
+        print("Invalid try again")
+        method()
 
- y = int(input("Enter second number :-"))
-
- # switch case
- if (choice == 1):
-    print("The sum is:")
-    print(x + y)
- elif(choice == 2):
-    print("The difference is:")
-    print(x - y)
- elif(choice == 3):
-    print("The product is:")
-    print(x * y)
- elif(choice==4):
-    print("The divident is:")
-    print(x / y)
- elif(choice==5):
-    print("The modulus is:")
-    print(x % y)
- elif(choice==6):
-    print("The exponent is:")
-    z = math.pow(x,y)
-    print(z)
- else:
-    print("Invalid try again.")
-    main()
-
-#####METHOD END#####    
-
-main()
-
-#####METHOD 2 START#####
 
 def ask():
- print("Do you want to continue ? (y = 1/ n = 2)")  
- a = int(input())
- if(a == 1):
-        print("Okay ! Continuing...")
-        main()
- if (a == 2):
-        print("Exiting...")
- else:
-        print("Error. Please try again (This could be a bug, please check the input)")
+    a = input("Do you want to continue ? ([Y]es / [N]o): ").lower()
 
-#####METHOD 2 END#####
+    if a == "yes" or a == "ye" or a == "y":
+        print("Okay... Continuing.")
+    elif a == "no" or a == "n":
+        print("Exiting....")
+        quit()
+    else:
+        print("Invalid choice. Continuing....")
 
-ask()
 
-##########END##########
+loop_counter = 1  # This is static to always repeat it
+
+while loop_counter == 1:
+    method()
+    ask()
+
