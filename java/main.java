@@ -28,30 +28,6 @@ public class main
     System.out.println("Enter first number :-"); 
     int x = input1.nextInt();
     
-    /*
-     * if(!input1.hasNextInt()) {
-		   System.out.println(input1.nextInt()+" is not a valid Integer");
-		   System.out.println("Please try again");
-		   method();
-		}
-    
-    if(!input2.hasNextInt()) {
-		   System.out.println(input2.nextInt()+" is not a valid choice");
-		   System.out.println("Please try again");
-		   method();
-		   
-		}
-		
-    if(!input3.hasNextInt()) {
-		   System.out.println(input3.nextInt()+" is not a valid Integer");
-		   System.out.println("Please try again");
-		   method();
-		}
-		
-     */
-    
-    // Above code is being tested and is buggy, probably going to be removed 
-    
     System.out.println("Enter your choice as follows:");
     System.out.println("1: Addition");
     System.out.println("2: Subtraction");
